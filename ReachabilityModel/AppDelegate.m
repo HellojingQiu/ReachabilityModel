@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  ReachabilityModel
 //
-//  Created by qianfeng on 15/1/19.
-//  Copyright (c) 2015年 qianfeng. All rights reserved.
+//  Created by yxx on 15/1/19.
+//  Copyright (c) 2015年 yxx. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "TFViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.viewController=[[TFViewController alloc]initWithNibName:@"TFViewController" bundle:nil];
+    self.window.rootViewController=self.viewController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

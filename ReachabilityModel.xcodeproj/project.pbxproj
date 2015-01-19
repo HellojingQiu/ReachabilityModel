@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		BC79DDD41A6D25BF00FB4AE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79DDD31A6D25BE00FB4AE5 /* main.m */; };
 		BC79DDD71A6D25BF00FB4AE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79DDD61A6D25BF00FB4AE5 /* AppDelegate.m */; };
-		BC79DDDA1A6D25BF00FB4AE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79DDD91A6D25BF00FB4AE5 /* ViewController.m */; };
-		BC79DDDD1A6D25BF00FB4AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC79DDDB1A6D25BF00FB4AE5 /* Main.storyboard */; };
 		BC79DDDF1A6D25BF00FB4AE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC79DDDE1A6D25BF00FB4AE5 /* Images.xcassets */; };
-		BC79DDE21A6D25BF00FB4AE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC79DDE01A6D25BF00FB4AE5 /* LaunchScreen.xib */; };
 		BC79DDEE1A6D25BF00FB4AE5 /* ReachabilityModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79DDED1A6D25BF00FB4AE5 /* ReachabilityModelTests.m */; };
+		BC79DDF91A6D2B3C00FB4AE5 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC79DDF81A6D2B3C00FB4AE5 /* TFViewController.m */; };
+		BC79DE091A6D2E4800FB4AE5 /* TFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC79DE081A6D2E4800FB4AE5 /* TFViewController.xib */; };
+		F460779C9D34217437DB6048 /* libPods-ReachabilityModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D6E21D9BEF6033E5397572 /* libPods-ReachabilityModel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +27,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48E6158414EC33E42D0955AF /* Pods-ReachabilityModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityModel/Pods-ReachabilityModel.release.xcconfig"; sourceTree = "<group>"; };
+		64D97D55441966000378FCDF /* Pods-ReachabilityModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityModel/Pods-ReachabilityModel.debug.xcconfig"; sourceTree = "<group>"; };
 		BC79DDCE1A6D25BE00FB4AE5 /* ReachabilityModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReachabilityModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC79DDD21A6D25BE00FB4AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC79DDD31A6D25BE00FB4AE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC79DDD51A6D25BF00FB4AE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC79DDD61A6D25BF00FB4AE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC79DDD81A6D25BF00FB4AE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC79DDD91A6D25BF00FB4AE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BC79DDDC1A6D25BF00FB4AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC79DDDE1A6D25BF00FB4AE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BC79DDE11A6D25BF00FB4AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BC79DDE71A6D25BF00FB4AE5 /* ReachabilityModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachabilityModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC79DDEC1A6D25BF00FB4AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC79DDED1A6D25BF00FB4AE5 /* ReachabilityModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReachabilityModelTests.m; sourceTree = "<group>"; };
+		BC79DDF71A6D2B3C00FB4AE5 /* TFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFViewController.h; sourceTree = "<group>"; };
+		BC79DDF81A6D2B3C00FB4AE5 /* TFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
+		BC79DE081A6D2E4800FB4AE5 /* TFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFViewController.xib; sourceTree = "<group>"; };
+		C5D6E21D9BEF6033E5397572 /* libPods-ReachabilityModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReachabilityModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F460779C9D34217437DB6048 /* libPods-ReachabilityModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024C0C70BB87810C9EC7BF84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D97D55441966000378FCDF /* Pods-ReachabilityModel.debug.xcconfig */,
+				48E6158414EC33E42D0955AF /* Pods-ReachabilityModel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC79DDC51A6D25BD00FB4AE5 = {
 			isa = PBXGroup;
 			children = (
 				BC79DDD01A6D25BE00FB4AE5 /* ReachabilityModel */,
 				BC79DDEA1A6D25BF00FB4AE5 /* ReachabilityModelTests */,
 				BC79DDCF1A6D25BE00FB4AE5 /* Products */,
+				024C0C70BB87810C9EC7BF84 /* Pods */,
+				E5A137326BDE6B571D8C8285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +97,10 @@
 			children = (
 				BC79DDD51A6D25BF00FB4AE5 /* AppDelegate.h */,
 				BC79DDD61A6D25BF00FB4AE5 /* AppDelegate.m */,
-				BC79DDD81A6D25BF00FB4AE5 /* ViewController.h */,
-				BC79DDD91A6D25BF00FB4AE5 /* ViewController.m */,
-				BC79DDDB1A6D25BF00FB4AE5 /* Main.storyboard */,
+				BC79DDF71A6D2B3C00FB4AE5 /* TFViewController.h */,
+				BC79DDF81A6D2B3C00FB4AE5 /* TFViewController.m */,
+				BC79DE081A6D2E4800FB4AE5 /* TFViewController.xib */,
 				BC79DDDE1A6D25BF00FB4AE5 /* Images.xcassets */,
-				BC79DDE01A6D25BF00FB4AE5 /* LaunchScreen.xib */,
 				BC79DDD11A6D25BE00FB4AE5 /* Supporting Files */,
 			);
 			path = ReachabilityModel;
@@ -119,6 +132,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E5A137326BDE6B571D8C8285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D6E21D9BEF6033E5397572 /* libPods-ReachabilityModel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC79DDF11A6D25BF00FB4AE5 /* Build configuration list for PBXNativeTarget "ReachabilityModel" */;
 			buildPhases = (
+				05A2CD4A91E34297D35EE045 /* Check Pods Manifest.lock */,
 				BC79DDCA1A6D25BE00FB4AE5 /* Sources */,
 				BC79DDCB1A6D25BE00FB4AE5 /* Frameworks */,
 				BC79DDCC1A6D25BE00FB4AE5 /* Resources */,
+				0DFD95F814300A0ABE72CE63 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,7 +187,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = qianfeng;
+				ORGANIZATIONNAME = yxx;
 				TargetAttributes = {
 					BC79DDCD1A6D25BE00FB4AE5 = {
 						CreatedOnToolsVersion = 6.2;
@@ -199,8 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC79DDDD1A6D25BF00FB4AE5 /* Main.storyboard in Resources */,
-				BC79DDE21A6D25BF00FB4AE5 /* LaunchScreen.xib in Resources */,
+				BC79DE091A6D2E4800FB4AE5 /* TFViewController.xib in Resources */,
 				BC79DDDF1A6D25BF00FB4AE5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,12 +236,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05A2CD4A91E34297D35EE045 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0DFD95F814300A0ABE72CE63 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReachabilityModel/Pods-ReachabilityModel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC79DDCA1A6D25BE00FB4AE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC79DDDA1A6D25BF00FB4AE5 /* ViewController.m in Sources */,
+				BC79DDF91A6D2B3C00FB4AE5 /* TFViewController.m in Sources */,
 				BC79DDD71A6D25BF00FB4AE5 /* AppDelegate.m in Sources */,
 				BC79DDD41A6D25BF00FB4AE5 /* main.m in Sources */,
 			);
@@ -242,25 +297,6 @@
 			targetProxy = BC79DDE81A6D25BF00FB4AE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BC79DDDB1A6D25BF00FB4AE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC79DDDC1A6D25BF00FB4AE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC79DDE01A6D25BF00FB4AE5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC79DDE11A6D25BF00FB4AE5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BC79DDEF1A6D25BF00FB4AE5 /* Debug */ = {
@@ -341,21 +377,27 @@
 		};
 		BC79DDF21A6D25BF00FB4AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D97D55441966000378FCDF /* Pods-ReachabilityModel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReachabilityModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
 		BC79DDF31A6D25BF00FB4AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E6158414EC33E42D0955AF /* Pods-ReachabilityModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReachabilityModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 			};
 			name = Release;
 		};
@@ -412,6 +454,7 @@
 				BC79DDF31A6D25BF00FB4AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC79DDF41A6D25BF00FB4AE5 /* Build configuration list for PBXNativeTarget "ReachabilityModelTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +463,7 @@
 				BC79DDF61A6D25BF00FB4AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
