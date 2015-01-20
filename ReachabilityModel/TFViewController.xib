@@ -7,13 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFViewController">
             <connections>
-                <outlet property="LocalWifiMotificationLabel" destination="XOy-0e-qTp" id="zx1-1z-qEE"/>
+                <outlet property="LocalWifiNotificationLabel" destination="XOy-0e-qTp" id="WWu-1j-s9d"/>
                 <outlet property="blockLabel" destination="6lS-ht-YoV" id="3BU-5m-okM"/>
                 <outlet property="internetConnectionBlockLabel" destination="QvH-hu-uhq" id="3YJ-9L-a7G"/>
                 <outlet property="internetConnectionNotificationLabel" destination="hQw-rA-KIl" id="k7E-o7-3MM"/>
                 <outlet property="localWifiBlockLabel" destination="RUn-iU-kM6" id="c4N-ch-W0Q"/>
-                <outlet property="motificationLabel" destination="UgJ-rX-I8A" id="Bcv-Nc-Y9P"/>
                 <outlet property="notificationLabel" destination="UgJ-rX-I8A" id="eUI-Ty-5bB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="UeE-U3-wg2"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

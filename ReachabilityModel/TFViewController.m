@@ -9,6 +9,13 @@
 #import "TFViewController.h"
 #import <Reachability/Reachability.h>
 
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
 @interface TFViewController()
 
 -(void)reachabilityChanged:(NSNotification *)note;
@@ -55,9 +62,58 @@
     
     [self.googleSearch startNotifier];
     
+    //////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+    self.localWifiReach=[Reachability reachabilityForLocalWiFi];
+    //我们只希望到达的WIFI - no不是一个可以接受的连接
+    self.localWifiReach.reachableOnWWAN=NO;
+    self.localWifiReach.reachableBlock=^(Reachability *reach){
+        NSString *temp=[NSString stringWithFormat:@"本地WIFI代码块可获得:%@",reach.currentReachabilityString];
+        DLog(@"%@",temp);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.localWifiBlockLabel.text=temp;
+            weakSelf.localWifiBlockLabel.textColor=[UIColor blackColor];
+        });
+    };
     
-    self.localWifiReach=[];
+    self.localWifiReach.unreachableBlock=^(Reachability *reach){
+        NSString *temp=[NSString stringWithFormat:@"本地WIFI代码块无法获得:%@",
+                        reach.currentReachabilityString];
+        DLog(@"%@",temp);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.localWifiBlockLabel.text=temp;
+            weakSelf.localWifiBlockLabel.textColor=[UIColor redColor];
+        });
+    };
+    
+    [self.localWifiReach startNotifier];
+    
+    //////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+    self.intentnetconnectionReach=[Reachability reachabilityForInternetConnection];
+    self.intentnetconnectionReach.reachableBlock=^(Reachability *reach){
+        NSString *temp=[NSString stringWithFormat:@"网络连接代码块可获得:%@",reach.currentReachabilityString];
+        DLog(@"%@",temp);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.internetConnectionBlockLabel.text=temp;
+            weakSelf.internetConnectionBlockLabel.textColor=[UIColor blackColor];
+        });
+    };
+    
+    self.intentnetconnectionReach.unreachableBlock=^(Reachability *reach){
+        NSString *temp=[NSString stringWithFormat:@"网络连接代码块我发货的:%@",reach.currentReachabilityString];
+        DLog(@"%@",temp);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.internetConnectionBlockLabel.text=temp;
+            weakSelf.internetConnectionBlockLabel.textColor=[UIColor redColor];
+        });
+    };
+    
+    [self.intentnetconnectionReach startNotifier];
+    
+    
 }
+
 
 #pragma mark - 网络状态改变
 //网络状态改变
